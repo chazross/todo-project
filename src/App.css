@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:#629460;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height */
+  color: #243119;
+}
+
+div {
+  background-color: #96be8c; /* White background for the container */
+  padding: 2em;
+  border-radius: 8px;
+ 
+}
+
+h1 {
+  color: #243119; /* Dark gray color for the heading */
+  text-align: center; /* Center the heading */
+}
+
+form {
+  display: flex;
+  justify-content: center; /* Center the form items */
+  margin-bottom: 1em; /* Space below the form */
+}
+
+input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5em; /* Space between input and button */
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #629460; /* Blue background for the button */
+  color: #c9f2c7; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #243119; /* Darker blue on hover */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc; /* Light gray bottom border */
+}
+
