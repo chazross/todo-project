@@ -35,8 +35,6 @@ export default function TodoList() {
         <div className="audiowide-regular">
           <Navbar />
             
-            <h1>Todo List</h1>
-            
             <form onSubmit={handleSubmit}>
                 <input 
                     placeholder="Task" 

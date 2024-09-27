@@ -3,90 +3,101 @@
 body {
   font-family: Arial, sans-serif;
   background-color:#629460;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full height */
   color: #243119;
-  
   
 }
 
- 
-
-div {
+ div {
   background-color: #96be8c;
   padding: 2em;
-  border-radius: 8px;
   text-align: center;
-  
- 
   
 }
 
 h1 {
   color: #243119; 
   text-align: center;
-  margin-bottom: 70px;
-  padding: 15px;
+  padding: 10px;
+  font-size: 2rem;
 
-  
 }
+
+h3 {
+  width: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
 .audiowide-regular {
   font-family: "Audiowide", sans-serif;
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
+  padding: 20px;
  }
-
-
-
-
-
 
 form {
   display: flex;
-  justify-content: center; /* Center the form items */
-  margin-bottom: 1em; /* Space below the form */
-
+  flex-direction: column; /* Stack input and button vertically */
+  margin-bottom: 20px; /* Space below the form */
   
   
 }
 
 input {
-  padding: 0.5em;
-  border: 1px solid #629460;
+  width: 200px;
+  padding: 10px;
+  border: 3px solid #629460;
   border-radius: 4px;
   margin-right: 0.5em; /* Space between input and button */
-  font-size: 17px;
- 
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  
 }
 
+input::placeholder {
+  color: #243119;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+
+
 button {
-  padding: 0.5em 1em;
+  width: 100px;
+  padding: 10px;
   background-color: #629460; /* color background for the button */
   color: #c9f2c7;
   border: none;
   border-radius: 4px;
-  font-size: 17px;
- 
+  font-size: 1 rem;
+  margin: auto;
+  font-weight: 800;
   
 }
 
 button:hover {
-  background-color: #243119; /* Darker blue on hover */
+  background-color: #243119; 
+  border: 3px solid #629460;
   
 }
+
+
 
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 50px;
   text-align: center; /* Center text in list items */
+  
 }
+
+
 
 li {
   display: flex;
@@ -94,28 +105,48 @@ li {
   align-items: center;
   padding: 0.5em;
   border: 1px solid #629460;
-  width: 300px;
-  height: 30px;
   margin: 10px 0;
   border-radius: 4px;
   background-color: #629460;
   list-style-type: none; /* Remove bullet points */
-  font-size: 17px;
+  font-size: 10px;
+  
+  
+}
+
+.complete-button {
+  color: #c9f2c7;
+  border-radius: 15px;
+  padding: 10px; /* Default padding */
+  font-size: 17px; 
+  width: 100px; /* Set a fixed width */
+  
+}
+
+.complete-button:hover{
+  width: 70px; /* Shorter width on hover */
+  background-color:  #243119;
+  border: 3px solid #c9f2c7;
+  
 }
 
 
 .delete-button {
-  color:  #c9f2c7;
-  border-radius: 30px;
-  padding: 10px;
-  font-size: 20px;
+  color: #c9f2c7;
+  border-radius: 15px;
+  padding: 10px; /* Default padding */
+  font-size: 20px; 
+  width: 100px; /* Set a fixed width */
   
- 
+  
+}
 
-}
 .delete-button:hover {
-  background-color: #243119;
+  width: 70px; /* Shorter width on hover */
+  background-color:  #243119;
+  border: 3px solid #c9f2c7;
 }
+
 
 .line-through {
   position: relative;
@@ -142,12 +173,14 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 50px;
   margin-bottom: 50px;
+  flex-wrap: wrap; /* Allow items to wrap in small screens */
 }
 
 .navbar h1 {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .navbar ul {
@@ -155,26 +188,46 @@ li {
   display: flex;
   margin: 0;
   padding: 0;
-  
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .navbar li {
   margin-left: 20px;
-  border-radius: 15px;
-}
-
-.navbar a {
-  color: #c9f2c7;
-  text-decoration: none;
-  
-}
-
-.navbar a:hover {
-  text-decoration: underline;
+  border-radius: 50px;
+  font-size: 1rem;
 }
 
 a:-webkit-any-link {
   color: #c9f2c7;
   cursor: default; /* Change from pointer to default */
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+  h1 {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+}
+
+input {
+    width: 100%; /* Full-width input on mobile */
+}
+
+button {
+    width: 100%; /* Full-width button on mobile */
+}
+  
 }
