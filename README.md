@@ -5,7 +5,7 @@
 ## A simple user friendly application that allows the user to create a list of 
 ## todo items
 
-### Type item in search bar, click add to add items to the list. Click "Mark COmpeted" to flag it as completed, and click the "trashcan" logo to delete.
+### Type item in search bar, click add to add items to the list. Click "Mark Competed" to flag it as completed, and click the "trashcan" logo to delete.
 
 ## Features / Functionality
 -Add new task
