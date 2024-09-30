@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import TodoItem from "./TodoItem";
-import Contact from "./Contact";
 import Navbar from "./Navbar";
 
 export default function TodoList() {
